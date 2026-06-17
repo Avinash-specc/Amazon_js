@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header>
+  <div class="header-top">
+
+    <div class="logo">
+      <img src="logo.svg" alt="Amazon">
+    </div>
+
+    <div class="deliver-to">
+      <span>Deliver to</span>
+      <strong>India</strong>
+    </div>
+
+    <div class="search-bar">
+      <select aria-label="Category">
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Books</option>
+        <option>Fashion</option>
+      </select>
+      <input type="text" placeholder="Search Amazon" aria-label="Search">
+      <button type="button" aria-label="Search">🔍</button>
+    </div>
+
+    <div class="header-buttons">
+      <button class="lang-btn">EN</button>
+      <button class="account-btn">
+        Hello, Sign in
+        <small>Account &amp; Lists</small>
+      </button>
+      <button class="returns-btn">
+        Returns
+        <small>&amp; Orders</small>
+      </button>
+      <button class="cart-btn">🛒 Cart (0)</button>
+    </div>
+
+  </div><!-- /.header-top -->
+
+  <nav>
+    <ul>
+      <li><a href="#deals">Today's Deals</a></li>
+      <li><a href="#electronics">Electronics</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#fashion">Fashion</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#prime">Prime</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ══════════════════════════════════════════
+     HERO  — outside page-wrap so it bleeds edge-to-edge
+══════════════════════════════════════════ -->
+<section class="hero">
+  <img
+    src="https://1.bp.blogspot.com/-KZoifP2gPP4/XmnlGAEWhZI/AAAAAAAAA-I/pOrXDHkrkC4LXtrhn0hpEBkGWI5Tj2RHACLcBGAsYHQ/s1600/01.jpg"
+    alt="Hero Banner">
+</section>
+
+<!-- ══════════════════════════════════════════
+     MAIN CONTENT  — centred wrapper
+══════════════════════════════════════════ -->
+<div class="page-wrap">
+
+  <!-- Shop by Category -->
+  <section class="shop-category">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category">
+        <img src="https://babatax.com/wp-content/uploads/2025/03/electronics.jpg" alt="Electronics">
+        <p>Electronics</p>
+      </div>
+      <div class="category">
+        <img src="https://images.stockcake.com/public/5/e/0/5e0d7739-64b9-4c82-adae-de63d39f9319_large/antique-books-display-stockcake.jpg" alt="Books">
+        <p>Books</p>
+      </div>
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?fm=jpg&q=60&w=3000" alt="Fashion">
+        <p>Fashion</p>
+      </div>
+      <div class="category">
+        <img src="https://john-lewis.co.uk/wp-content/uploads/2022/01/200824_JohnLewis-WD_0072-Edit-Edit_1_Screen-2.jpg" alt="Home">
+        <p>Home &amp; Kitchen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Today's Deals -->
+  <section class="products" id="deals">
+    <h2>Today's Deals</h2>
+    <div class="product-carousel">
+
+      <div class="product">
+        <img src="https://cdn.mos.cms.futurecdn.net/MjUjNiFhGnbXb9QU78u8Sc.jpg" alt="Laptop">
+        <p class="name">Laptop Deal</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.5)</div>
+        <p class="price"><span class="old-price">$999</span> <span class="new-price">$799</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://media.istockphoto.com/id/1372906882/photo/modern-blue-wireless-headphones-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=0k-2JFElEQ0QTvXsgtLx3i2JotQo_Eb8aEwyN-BOZjA=" alt="Headphones">
+        <p class="name">Wireless Headphones</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+        <p class="price"><span class="old-price">$199</span> <span class="new-price">$149</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://picsum.photos/200/200?random=4" alt="Book">
+        <p class="name">Bestseller Book</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.2)</div>
+        <p class="price"><span class="old-price">$20</span> <span class="new-price">$15</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://picsum.photos/200/200?random=5" alt="Shoes">
+        <p class="name">Running Shoes</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.3)</div>
+        <p class="price"><span class="old-price">$120</span> <span class="new-price">$90</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://picsum.photos/200/200?random=14" alt="Tablet">
+        <p class="name">Tablet Deal</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (4.8)</div>
+        <p class="price"><span class="old-price">$299</span> <span class="new-price">$249</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://picsum.photos/200/200?random=15" alt="Watch">
+        <p class="name">Smartwatch</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.6)</div>
+        <p class="price"><span class="old-price">$250</span> <span class="new-price">$200</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://picsum.photos/200/200?random=20" alt="Speaker">
+        <p class="name">Bluetooth Speaker</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.4)</div>
+        <p class="price"><span class="old-price">$80</span> <span class="new-price">$59</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Electronics -->
+  <section class="products" id="electronics">
+    <h2>Electronics</h2>
+    <div class="product-carousel">
+
+      <div class="product">
+        <img src="https://www.test.de/file/image/41/61/6bc32339-4b2e-4969-88c2-4c2ddfc4cb2a-web/5752472_Smartphones-072021_neu.jpg" alt="Smartphone">
+        <p class="name">Latest Smartphone</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (4.9)</div>
+        <p class="price">$699</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.eP2l_M2BYVpMxdEJf48OnQHaFj?pid=Api&P=0&h=180" alt="Tablet">
+        <p class="name">High-End Tablet</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.7)</div>
+        <p class="price">$499</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn.britannica.com/67/92867-050-BC3DC984/cameras-camera-reviews-crystal-displays-photographs-film.jpg" alt="Camera">
+        <p class="name">Digital Camera</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.4)</div>
+        <p class="price">$599</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71mwgB-CJIL._AC_.jpg" alt="Drone">
+        <p class="name">Drone with Camera</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.5)</div>
+        <p class="price">$399</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://www.atulhost.com/wp-content/uploads/2023/12/gaming-laptops.jpg" alt="Gaming Laptop">
+        <p class="name">Gaming Laptop</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (4.8)</div>
+        <p class="price">$1299</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://www.familyhandyman.com/wp-content/uploads/2021/04/61xwwOcrgoL._AC_SL1388_.jpg?fit=696" alt="Headphones">
+        <p class="name">Noise-Canceling Headphones</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.6)</div>
+        <p class="price">$299</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Books -->
+  <section class="products" id="books">
+    <h2>Books</h2>
+    <div class="product-carousel">
+
+      <div class="product">
+        <img src="https://assets-prd.ignimgs.com/2024/10/23/harry-potter-books-in-order-1-1729712610076.jpg" alt="Harry Potter">
+        <p class="name">Best-Selling Novel</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.3)</div>
+        <p class="price">$15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9798886630022/apex-legends-the-official-cookbook-9798886630022_hr.jpg" alt="Cookbook">
+        <p class="name">Cookbook</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (4.9)</div>
+        <p class="price">$25</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://www.selectedreads.com/wp-content/uploads/2023/03/12-Best-Biographies-of-All-Time.png" alt="Biography">
+        <p class="name">Biography</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.5)</div>
+        <p class="price">$20</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/12/Marvel-Cinematic-Universe-MCU.jpg" alt="Sci-Fi">
+        <p class="name">Sci-Fi Adventure</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.7)</div>
+        <p class="price">$18</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /.page-wrap -->
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-links">
+    <div>
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Amazon</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Make Money with Us</h4>
+      <ul>
+        <li><a href="#">Sell on Amazon</a></li>
+        <li><a href="#">Become an Affiliate</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Amazon Payment Products</h4>
+      <ul>
+        <li><a href="#">Amazon Rewards Visa</a></li>
+        <li><a href="#">Amazon.com Reload</a></li>
+      </ul>
+    </div>
+  </div>
+  <p>&copy; 2026 Amazon Clone. All rights reserved.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
